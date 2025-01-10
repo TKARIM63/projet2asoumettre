@@ -2,37 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GROUP TK</title>
 </head>
 <body>
     <header>
         <nav>
-            <H1>PORTFOLIO</H1>
             <ul>
-                <li><a href="">HOME</a></li>
+                <li><a href="#sectionhome">HOME</a></li>
                 <li><a href="">ABOUT</a></li>
-                <li><a href="">WORK</a></li>
+                <li><a href="#sectionwork">WORK</a></li>
                 <li><a href="">CONTACT</a></li>
             </ul>
         </nav>
     </header>
-    <SECTion>
-        <H2>HOME</H2>
+    <main>
+        <h1>PORTFOLIO</h1>
+    <section id="sectionhome" class="sectionhome">
+        <h2 >HOME</h2>
             <UL>
-                <LI>PRENOM:KARIM</LI><br>
-                <LI>NOM: TRAORE</LI><br>
-                <li><img src="th.jpg" width="20">Abidjan/Cote d'Ivoire</li>
+                <LI>PRENOM:KARIM</LI>
+                <LI>NOM: TRAORE</LI>
+                <li><img src="th.jpg" width="20"> Abidjan/Cote d'Ivoire</li>
             </UL>
-            <img src="unnamed.jpg"  width="400">
-    </SECTion>
+            <img src="unnamed.jpg"  width="400" height="400">
+    </section>
     <section>
         <h2>ABOUT</h2>
         <P>Je suis Karim Traore developpeur WEB, depuis deux semaine, j'ai commencé à aimer le domaine du devellopeur web  plus generalement le domaine informatique depuis mon enfant, par cette curioté, j'ai pu develloper un amour qui c'est transformé en passion pendant ma progression et maintenant , le devellopement web est ma plus grandepassion, coder c'est toute ma vie. </P>
-        <video src="video tk.MP4" autoplay width="300" controls muets></video>
+        <video src="video tk.MP4" autoplay width="1000" height="500" controls muets></video>
     </section>
-     <section>
-        <h2>WORK</h2>
+     <section id="sectionwork">
+        <h2 >WORK</h2>
         <p>J'ai realiser plusieur travaux pour des cleint different comme l'indique le tableau ci-dessous:</p>
         <table border="5">
             <tr>
@@ -50,12 +52,24 @@
                 <td>creation d'un site web presentation le projet avec toutes les informations sue le projet et permettre a des candidats de s'incrirer si possible</td>
                 <td>le 03 septembre 2024</td>
             </tr>
-        </table>
+        </table><br>
      </section>
-     <footer>
+     <footer class="contact">
+        <h2>CONTACTS</h2>
         <form action="">
-            <input type="email">
+            <label for="NOM">NOM:</label> <input id="NOM" type="text" placeholder="veuillez ecrire votre nom"> <br>
+            <br>
+            <label for="PRENOM">PRENOMS:</label> <input id="PRENOM" type="text" placeholder="veuillez ecrire votre prenom"> <br>
+            <br>
+               <label for="email">Email:</label> <input id="email" type="email" placeholder="veuillez ecrire votre email"><br>
+               <br>
+               <p>GENRE</p>
+                <input type="radio" name="sexe">Madame 
+                <input type="radio" name="sexe">Monsieur <br>
+                <br>
+                <input type="submit" value="valider">
         </form>
+    </main>
      </footer>
 </body>
 </html>
